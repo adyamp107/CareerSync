@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+    <title>Switch</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            padding: 5px;
+        }
+        p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            margin: 0;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <script src="../../database.js"></script>
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        const dataParam = getQueryParam('data');
+        const getDataLocal = getData(key);
+        
+        let checkUser = false;
+
+        getDataLocal.user.forEach((user, index) => {
+            if(user.Username === dataParam) {
+                checkUser = true;
+                getDataLocal.currentUser = index;
+                saveData(key, getDataLocal);
+                window.location.href = './profile.html';
+            }
+        });
+
+        if(!checkUser) {
+            document.querySelector('body').innerHTML = `
+                <p>No data</p>
+                <p>
+                    Please return to the previous page!
+                </p>
+            `;
+        }
+
+    </script>
+</body>
+</html>

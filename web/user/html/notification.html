@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerSync (Notification)</title>
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/notification.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <img src="../assets/logo.png" alt="">
+            <h3>CareerSync</h3>
+        </div>
+        <div class="navbar-middle">
+            <a href="./home.html" class="home-button button-2">Home</a>
+            <a href="./profile.html" class="profile-button button-2">Profile</a>
+            <a href="./notification.html" class="notification-button button-2 selected-button-2">Notification</a>
+            <a href="./job.html" class="job-button button-2">Job</a>
+            <a href="./company.html" class="company-button button-2">Company</a>
+        </div>
+        <div class="navbar-right">
+            <a class="login button-1" href="./login.html">Log In</a>
+            <a class="signup button-1" href="./signup.html">Sign Up</a>
+            <img src="../assets/hamburger_button.png" alt="" class="hamburger-button">
+        </div>
+        <div class="hamburger-menu">
+            <a href="./login.html">Log In</a>
+            <a href="./signup.html">Sign Up</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content-top">
+            <div class="search-bar">
+                <div>
+                    <img src="../assets/search.png" alt="">
+                </div>
+                <input type="search" name="" class="search-text" id="search-title" placeholder="Job, company, date, status">
+                <div class="search-button button-1">Search</div>
+            </div>
+            <div class="table-control">
+                <select name="" id="sort-type" class="select-option">
+                    <option value="Job">Job</option>
+                    <option value="Company">Company</option>
+                    <option value="Date">Date</option>
+                    <option value="Status">Status</option>
+                </select>
+                <select name="" id="sort-asc-desc" class="select-option">
+                    <option value="Ascending">Ascending</option>
+                    <option value="Descending">Descending</option>
+                </select>
+            </div>
+        </div>
+        <div class="content-bottom">
+            <div class="table-wrapper">
+                <div class="notification-header">
+                    <div class="notification-row">
+                        <div>Job</div>
+                        <div>Company</div>
+                        <div>Date</div>
+                        <div>Status</div>
+                        <div>Control</div>
+                    </div>
+                </div>
+                <div class="notification-list">
+                    <!-- <div class="notification-row">
+                        <div>Software Engineering</div>
+                        <div>Tokopedia</div>
+                        <div>June 12, 2024</div>
+                        <div>Await</div>
+                        <div class="notification-control">
+                            <div class="button-1">More</div>
+                            <div class="button-5">Delete</div>
+                        </div>
+                    </div>
+                    <div class="notification-row">
+                        <div>Software</div>
+                        <div>Tokopedia</div>
+                        <div>June 12, 2024</div>
+                        <div>Await</div>
+                        <div class="notification-control">
+                            <div class="button-1">More</div>
+                            <div class="button-5">Delete</div>
+                        </div>
+                    </div>
+                    <div class="notification-row">
+                        <div>Software Engineering</div>
+                        <div>Tokopedia</div>
+                        <div>June 12, 2024</div>
+                        <div>Await</div>
+                        <div class="notification-control">
+                            <div class="button-1">More</div>
+                            <div class="button-5">Delete</div>
+                        </div>
+                    </div>
+                    <div class="notification-row">
+                        <div>Software Engineering</div>
+                        <div>Tokopedia</div>
+                        <div>June 12, 2024</div>
+                        <div>Await</div>
+                        <div class="notification-control">
+                            <div class="button-1">More</div>
+                            <div class="button-5">Delete</div>
+                        </div>
+                    </div>
+                    <div class="notification-row">
+                        <div>Software Engineering</div>
+                        <div>Tokopedia</div>
+                        <div>June 12, 2024</div>
+                        <div>Await</div>
+                        <div class="notification-control">
+                            <div class="button-1">More</div>
+                            <div class="button-5">Delete</div>
+                        </div>
+                    </div>
+                    <div class="notification-row">
+                        <div>Software Engineering</div>
+                        <div>Tokopedia</div>
+                        <div>June 12, 2024</div>
+                        <div>Await</div>
+                        <div class="notification-control">
+                            <div class="button-1">More</div>
+                            <div class="button-5">Delete</div>
+                        </div>
+                    </div>
+                    <div class="notification-row">
+                        <div>Software Engineering</div>
+                        <div>Tokopedia dfgdgf dfg df gd fg d fgdfgdfgdfgd fg df gdfgdfg dfg df gdfgdfgd fg dfgdfgdfg</div>
+                        <div>June 12, 2024</div>
+                        <div>Await</div>
+                        <div class="notification-control">
+                            <div class="button-1">More</div>
+                            <div class="button-5">Delete</div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-top">
+            <div class="footer-left">
+                <h3>About Us</h3>
+                <p>Your Premier Career Development Partner! At CareerSync, we are dedicated to empowering job seekers and connecting them with the best opportunities available. Our platform is designed to be a comprehensive resource for individuals at all stages of their career journey, from recent graduates to seasoned professionals.</p>
+            </div>
+            <div class="footer-middle">
+                <h3>Keep Connected</h3>
+                <div>
+                    <img src="../assets/youtube.png" alt="">
+                    <p>Subscribe us on Youtube</p>
+                </div>
+                <div>
+                    <img src="../assets/instagram.png" alt="">
+                    <p>Follow us on Instagram</p>
+                </div>
+                <div>
+                    <img src="../assets/facebook.png" alt="">
+                    <p>Like us on Facebook</p>
+                </div>
+                <div>
+                    <img src="../assets/google_plus.png" alt="">
+                    <p>Add us on Google Plus</p>
+                </div>
+                <div>
+                    <img src="../assets/pinterest.png" alt="">
+                    <p>Follow us on Pinterest</p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <h3>Contact Information</h3>
+                <div>
+                    <img src="../assets/home.png" alt="">
+                    <p>CareerSync</p>
+                </div>
+                <div>
+                    <img src="../assets/phone.png" alt="">
+                    <p>+6212312312312</p>
+                </div>
+                <div>
+                    <img src="../assets/mail.png" alt="">
+                    <p>support@careersync.ac.id</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>@CareerSync , 2024. ALL RIGHTS RESERVED</p>
+        </div>
+    </div>
+    <script src="../../database.js"></script>
+    <script src="../js/notification.js"></script>
+</body>
+</html>
