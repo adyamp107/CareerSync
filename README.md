@@ -1,4 +1,4 @@
-![logo](https://github.com/adyamp107/CareerSync/assets/137896283/85da671c-e499-4e55-a7c8-1d558d8fadd7)
+![Picture3](https://github.com/adyamp107/CareerSync/assets/137896283/dae9a828-4238-484e-a680-73c64a6b34be)
 
 # CareerSync
 
